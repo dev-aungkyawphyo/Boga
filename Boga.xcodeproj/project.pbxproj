@@ -23,6 +23,9 @@
 		1D037A822CBDAB88008028B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D037A812CBDAB88008028B1 /* AppDelegate.swift */; };
 		1D037A8B2CBDAB8A008028B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D037A8A2CBDAB8A008028B1 /* Assets.xcassets */; };
 		1D037A8E2CBDAB8A008028B1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1D037A8D2CBDAB8A008028B1 /* Base */; };
+		1DA8819E2CBEE61600415FD1 /* PasswordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA8819D2CBEE61600415FD1 /* PasswordType.swift */; };
+		1DA881A02CBEE62200415FD1 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA8819F2CBEE62200415FD1 /* ValidationError.swift */; };
+		1DA881A22CBEE62F00415FD1 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA881A12CBEE62F00415FD1 /* ValidationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		1D037A8A2CBDAB8A008028B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D037A8D2CBDAB8A008028B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D037A8F2CBDAB8A008028B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DA8819D2CBEE61600415FD1 /* PasswordType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordType.swift; sourceTree = "<group>"; };
+		1DA8819F2CBEE62200415FD1 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		1DA881A12CBEE62F00415FD1 /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 		1D02EA182CBDBDFC00F0D5B1 /* Validation */ = {
 			isa = PBXGroup;
 			children = (
+				1DA8819D2CBEE61600415FD1 /* PasswordType.swift */,
+				1DA8819F2CBEE62200415FD1 /* ValidationError.swift */,
+				1DA881A12CBEE62F00415FD1 /* ValidationService.swift */,
 			);
 			path = Validation;
 			sourceTree = "<group>";
@@ -282,9 +291,12 @@
 				1D02EA282CBDBF9700F0D5B1 /* BogaView.swift in Sources */,
 				1D02EA242CBDBF4400F0D5B1 /* Constants.swift in Sources */,
 				1D02EA202CBDBF1000F0D5B1 /* UITextField+Extensions.swift in Sources */,
+				1DA881A02CBEE62200415FD1 /* ValidationError.swift in Sources */,
 				1D02EA142CBDBC4900F0D5B1 /* Storyboarded.swift in Sources */,
+				1DA881A22CBEE62F00415FD1 /* ValidationService.swift in Sources */,
 				1D02EA2A2CBDBFB600F0D5B1 /* BogaImageView.swift in Sources */,
 				1D02EA2C2CBDBFE100F0D5B1 /* UIView+Extensions.swift in Sources */,
+				1DA8819E2CBEE61600415FD1 /* PasswordType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
