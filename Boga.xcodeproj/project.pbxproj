@@ -23,9 +23,11 @@
 		1D037A822CBDAB88008028B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D037A812CBDAB88008028B1 /* AppDelegate.swift */; };
 		1D037A8B2CBDAB8A008028B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D037A8A2CBDAB8A008028B1 /* Assets.xcassets */; };
 		1D037A8E2CBDAB8A008028B1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1D037A8D2CBDAB8A008028B1 /* Base */; };
-		1DA8819E2CBEE61600415FD1 /* PasswordType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA8819D2CBEE61600415FD1 /* PasswordType.swift */; };
-		1DA881A02CBEE62200415FD1 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA8819F2CBEE62200415FD1 /* ValidationError.swift */; };
 		1DA881A22CBEE62F00415FD1 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA881A12CBEE62F00415FD1 /* ValidationService.swift */; };
+		1DA881A42CBEEDAE00415FD1 /* LoginScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA881A32CBEEDAE00415FD1 /* LoginScreenProtocols.swift */; };
+		1DA881A62CBEEDE900415FD1 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA881A52CBEEDE900415FD1 /* LoginModel.swift */; };
+		1DA881A92CBEF78200415FD1 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA881A82CBEF78200415FD1 /* HomeScreenViewController.swift */; };
+		1DA881AB2CBEF7A800415FD1 /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DA881AA2CBEF7A800415FD1 /* MainScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +49,11 @@
 		1D037A8A2CBDAB8A008028B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D037A8D2CBDAB8A008028B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D037A8F2CBDAB8A008028B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1DA8819D2CBEE61600415FD1 /* PasswordType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordType.swift; sourceTree = "<group>"; };
-		1DA8819F2CBEE62200415FD1 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
 		1DA881A12CBEE62F00415FD1 /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
+		1DA881A32CBEEDAE00415FD1 /* LoginScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenProtocols.swift; sourceTree = "<group>"; };
+		1DA881A52CBEEDE900415FD1 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		1DA881A82CBEF78200415FD1 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		1DA881AA2CBEF7A800415FD1 /* MainScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +70,6 @@
 		1D02EA182CBDBDFC00F0D5B1 /* Validation */ = {
 			isa = PBXGroup;
 			children = (
-				1DA8819D2CBEE61600415FD1 /* PasswordType.swift */,
-				1DA8819F2CBEE62200415FD1 /* ValidationError.swift */,
 				1DA881A12CBEE62F00415FD1 /* ValidationService.swift */,
 			);
 			path = Validation;
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				1D02EA2E2CBDC02900F0D5B1 /* LoginScreenViewController.swift */,
+				1DA881A32CBEEDAE00415FD1 /* LoginScreenProtocols.swift */,
 				1D02EA302CBDC03400F0D5B1 /* LoginScreen.storyboard */,
 			);
 			path = LoginScreenModule;
@@ -150,6 +153,8 @@
 		1D037A952CBDBA7A008028B1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1DA881AA2CBEF7A800415FD1 /* MainScreen.storyboard */,
+				1DA881A72CBEF76000415FD1 /* HomeScreenModule */,
 				1D02EA2D2CBDC01900F0D5B1 /* LoginScreenModule */,
 			);
 			path = Modules;
@@ -167,6 +172,7 @@
 		1D037A972CBDBA82008028B1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1DA881A52CBEEDE900415FD1 /* LoginModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -208,6 +214,14 @@
 				1D037A8F2CBDAB8A008028B1 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		1DA881A72CBEF76000415FD1 /* HomeScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				1DA881A82CBEF78200415FD1 /* HomeScreenViewController.swift */,
+			);
+			path = HomeScreenModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D02EA162CBDBCEA00F0D5B1 /* Colors.xcassets in Resources */,
+				1DA881AB2CBEF7A800415FD1 /* MainScreen.storyboard in Resources */,
 				1D037A8B2CBDAB8A008028B1 /* Assets.xcassets in Resources */,
 				1D02EA312CBDC03400F0D5B1 /* LoginScreen.storyboard in Resources */,
 				1D037A8E2CBDAB8A008028B1 /* Base in Resources */,
@@ -283,20 +298,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D02EA262CBDBF7A00F0D5B1 /* BogaButton.swift in Sources */,
+				1DA881A92CBEF78200415FD1 /* HomeScreenViewController.swift in Sources */,
 				1D02EA1E2CBDBEC100F0D5B1 /* BogaTextField.swift in Sources */,
 				1D02EA2F2CBDC02900F0D5B1 /* LoginScreenViewController.swift in Sources */,
+				1DA881A42CBEEDAE00415FD1 /* LoginScreenProtocols.swift in Sources */,
 				1D02EA222CBDBF2D00F0D5B1 /* UIColor+Extensions.swift in Sources */,
 				1D037A822CBDAB88008028B1 /* AppDelegate.swift in Sources */,
 				1D02EA122CBDBC3800F0D5B1 /* BogaViewController.swift in Sources */,
 				1D02EA282CBDBF9700F0D5B1 /* BogaView.swift in Sources */,
+				1DA881A62CBEEDE900415FD1 /* LoginModel.swift in Sources */,
 				1D02EA242CBDBF4400F0D5B1 /* Constants.swift in Sources */,
 				1D02EA202CBDBF1000F0D5B1 /* UITextField+Extensions.swift in Sources */,
-				1DA881A02CBEE62200415FD1 /* ValidationError.swift in Sources */,
 				1D02EA142CBDBC4900F0D5B1 /* Storyboarded.swift in Sources */,
 				1DA881A22CBEE62F00415FD1 /* ValidationService.swift in Sources */,
 				1D02EA2A2CBDBFB600F0D5B1 /* BogaImageView.swift in Sources */,
 				1D02EA2C2CBDBFE100F0D5B1 /* UIView+Extensions.swift in Sources */,
-				1DA8819E2CBEE61600415FD1 /* PasswordType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
