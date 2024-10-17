@@ -9,21 +9,20 @@ import UIKit
 
 class HomeScreenViewController: BogaViewController {
 
+    // MARK: - IBOutlets
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var userImageView: BogaImageView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    @IBOutlet weak var productCollectionView: UICollectionView!
+    @IBOutlet weak var shopCollectionView: UICollectionView!
+    
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
