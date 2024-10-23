@@ -18,4 +18,13 @@ extension UIView {
         layer.mask = mask
     }
     
+//    @IBInspectable var cornerRadius: CGFloat {
+//        get {
+//            return self.cornerRadius
+//        }
+//        set {
+//            self.layer.cornerRadius = newValue
+//        }
+//    }
+    
 }
