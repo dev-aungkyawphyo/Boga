@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileScreenViewController: UIViewController {
+class ProfileScreenViewController: BogaViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

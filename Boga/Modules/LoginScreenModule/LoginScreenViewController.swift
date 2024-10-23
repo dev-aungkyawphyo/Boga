@@ -122,7 +122,7 @@ extension LoginScreenViewController: LoginScreenProtocols {
     }
     
     private func baseRouter() {
-        let homeVC = HomeScreenViewController.instantiate(storyboard: .baseRouter)
+        let homeVC = BogaTabBarViewController.instantiate(storyboard: .baseRouter)
         homeVC.modalTransitionStyle = .crossDissolve
         homeVC.modalPresentationStyle = .fullScreen
         self.present(homeVC, animated: true)
