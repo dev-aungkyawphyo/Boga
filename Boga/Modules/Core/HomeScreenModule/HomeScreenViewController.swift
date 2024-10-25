@@ -74,7 +74,7 @@ class HomeScreenViewController: BogaViewController {
     
     // MARK: User Interaction - Actions & Targets
     @objc func didTapImageView(_ sender: UITapGestureRecognizer) {
-        print(sender.view?.tag)
+        print(sender.view?.tag as Any)
         
     }
 

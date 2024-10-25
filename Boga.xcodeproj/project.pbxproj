@@ -34,6 +34,10 @@
 		1D3422E42CC0377000AAEF1A /* FavouriteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3422E32CC0377000AAEF1A /* FavouriteScreenViewController.swift */; };
 		1D3422E62CC0377A00AAEF1A /* ProfileScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3422E52CC0377A00AAEF1A /* ProfileScreenViewController.swift */; };
 		1D3422E82CC038BC00AAEF1A /* BogaTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3422E72CC038BC00AAEF1A /* BogaTabBarViewController.swift */; };
+		1D4AAD1E2CCC0CC1006FEF47 /* ProductListScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4AAD1D2CCC0CC1006FEF47 /* ProductListScreenViewController.swift */; };
+		1D4AAD202CCC1112006FEF47 /* ProductListScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4AAD1F2CCC1112006FEF47 /* ProductListScreen.storyboard */; };
+		1D4AAD262CCC2254006FEF47 /* ProductListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D4AAD252CCC2254006FEF47 /* ProductListTableViewCell.xib */; };
+		1D4AAD272CCC2254006FEF47 /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4AAD242CCC2254006FEF47 /* ProductListTableViewCell.swift */; };
 		1DA881A22CBEE62F00415FD1 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA881A12CBEE62F00415FD1 /* ValidationService.swift */; };
 		1DA881A42CBEEDAE00415FD1 /* LoginScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA881A32CBEEDAE00415FD1 /* LoginScreenProtocols.swift */; };
 		1DA881A62CBEEDE900415FD1 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA881A52CBEEDE900415FD1 /* LoginModel.swift */; };
@@ -71,6 +75,10 @@
 		1D3422E32CC0377000AAEF1A /* FavouriteScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteScreenViewController.swift; sourceTree = "<group>"; };
 		1D3422E52CC0377A00AAEF1A /* ProfileScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewController.swift; sourceTree = "<group>"; };
 		1D3422E72CC038BC00AAEF1A /* BogaTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BogaTabBarViewController.swift; sourceTree = "<group>"; };
+		1D4AAD1D2CCC0CC1006FEF47 /* ProductListScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListScreenViewController.swift; sourceTree = "<group>"; };
+		1D4AAD1F2CCC1112006FEF47 /* ProductListScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductListScreen.storyboard; sourceTree = "<group>"; };
+		1D4AAD242CCC2254006FEF47 /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
+		1D4AAD252CCC2254006FEF47 /* ProductListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListTableViewCell.xib; sourceTree = "<group>"; };
 		1DA881A12CBEE62F00415FD1 /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
 		1DA881A32CBEEDAE00415FD1 /* LoginScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenProtocols.swift; sourceTree = "<group>"; };
 		1DA881A52CBEEDE900415FD1 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
@@ -132,6 +140,7 @@
 		1D02EA1C2CBDBE4D00F0D5B1 /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				1D4AAD232CCC2214006FEF47 /* ProductListTableViewCell */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -179,12 +188,8 @@
 		1D037A952CBDBA7A008028B1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				1DA881AA2CBEF7A800415FD1 /* MainScreen.storyboard */,
-				1D02EA2D2CBDC01900F0D5B1 /* LoginScreenModule */,
-				1DA881A72CBEF76000415FD1 /* HomeScreenModule */,
-				1D3422DE2CC0372300AAEF1A /* MapScreenModule */,
-				1D3422DF2CC0372F00AAEF1A /* FavouriteScreenModule */,
-				1D3422E02CC0373A00AAEF1A /* ProfileScreenModule */,
+				1D4AAD212CCC114A006FEF47 /* Core */,
+				1D4AAD222CCC1153006FEF47 /* General */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -289,6 +294,45 @@
 			path = ProfileScreenModule;
 			sourceTree = "<group>";
 		};
+		1D4AAD1C2CCC0C95006FEF47 /* ProductListScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				1D4AAD1D2CCC0CC1006FEF47 /* ProductListScreenViewController.swift */,
+				1D4AAD1F2CCC1112006FEF47 /* ProductListScreen.storyboard */,
+			);
+			path = ProductListScreenModule;
+			sourceTree = "<group>";
+		};
+		1D4AAD212CCC114A006FEF47 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1DA881AA2CBEF7A800415FD1 /* MainScreen.storyboard */,
+				1D02EA2D2CBDC01900F0D5B1 /* LoginScreenModule */,
+				1DA881A72CBEF76000415FD1 /* HomeScreenModule */,
+				1D3422DE2CC0372300AAEF1A /* MapScreenModule */,
+				1D3422DF2CC0372F00AAEF1A /* FavouriteScreenModule */,
+				1D3422E02CC0373A00AAEF1A /* ProfileScreenModule */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1D4AAD222CCC1153006FEF47 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				1D4AAD1C2CCC0C95006FEF47 /* ProductListScreenModule */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		1D4AAD232CCC2214006FEF47 /* ProductListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				1D4AAD242CCC2254006FEF47 /* ProductListTableViewCell.swift */,
+				1D4AAD252CCC2254006FEF47 /* ProductListTableViewCell.xib */,
+			);
+			path = ProductListTableViewCell;
+			sourceTree = "<group>";
+		};
 		1DA881A72CBEF76000415FD1 /* HomeScreenModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +399,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D4AAD202CCC1112006FEF47 /* ProductListScreen.storyboard in Resources */,
+				1D4AAD262CCC2254006FEF47 /* ProductListTableViewCell.xib in Resources */,
 				1D02EA162CBDBCEA00F0D5B1 /* Colors.xcassets in Resources */,
 				1DA881AB2CBEF7A800415FD1 /* MainScreen.storyboard in Resources */,
 				1D1320172CC18CB700857AF9 /* ShopCollectionViewCell.xib in Resources */,
@@ -372,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D4AAD1E2CCC0CC1006FEF47 /* ProductListScreenViewController.swift in Sources */,
 				1D3422E62CC0377A00AAEF1A /* ProfileScreenViewController.swift in Sources */,
 				1D02EA262CBDBF7A00F0D5B1 /* BogaButton.swift in Sources */,
 				1D1320182CC18CB700857AF9 /* ShopCollectionViewCell.swift in Sources */,
@@ -388,6 +435,7 @@
 				1D3422E82CC038BC00AAEF1A /* BogaTabBarViewController.swift in Sources */,
 				1D037A822CBDAB88008028B1 /* AppDelegate.swift in Sources */,
 				1D02EA122CBDBC3800F0D5B1 /* BogaViewController.swift in Sources */,
+				1D4AAD272CCC2254006FEF47 /* ProductListTableViewCell.swift in Sources */,
 				1D02EA282CBDBF9700F0D5B1 /* BogaView.swift in Sources */,
 				1DA881A62CBEEDE900415FD1 /* LoginModel.swift in Sources */,
 				1D02EA242CBDBF4400F0D5B1 /* Constants.swift in Sources */,
