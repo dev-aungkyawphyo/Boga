@@ -38,6 +38,7 @@
 		1D4AAD202CCC1112006FEF47 /* ProductListScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4AAD1F2CCC1112006FEF47 /* ProductListScreen.storyboard */; };
 		1D4AAD262CCC2254006FEF47 /* ProductListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D4AAD252CCC2254006FEF47 /* ProductListTableViewCell.xib */; };
 		1D4AAD272CCC2254006FEF47 /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4AAD242CCC2254006FEF47 /* ProductListTableViewCell.swift */; };
+		1D4AAD292CCC2EB0006FEF47 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4AAD282CCC2EB0006FEF47 /* UITableView+Extensions.swift */; };
 		1DA881A22CBEE62F00415FD1 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA881A12CBEE62F00415FD1 /* ValidationService.swift */; };
 		1DA881A42CBEEDAE00415FD1 /* LoginScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA881A32CBEEDAE00415FD1 /* LoginScreenProtocols.swift */; };
 		1DA881A62CBEEDE900415FD1 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA881A52CBEEDE900415FD1 /* LoginModel.swift */; };
@@ -79,6 +80,7 @@
 		1D4AAD1F2CCC1112006FEF47 /* ProductListScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductListScreen.storyboard; sourceTree = "<group>"; };
 		1D4AAD242CCC2254006FEF47 /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
 		1D4AAD252CCC2254006FEF47 /* ProductListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListTableViewCell.xib; sourceTree = "<group>"; };
+		1D4AAD282CCC2EB0006FEF47 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		1DA881A12CBEE62F00415FD1 /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
 		1DA881A32CBEEDAE00415FD1 /* LoginScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenProtocols.swift; sourceTree = "<group>"; };
 		1DA881A52CBEEDE900415FD1 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				1D02EA2B2CBDBFE100F0D5B1 /* UIView+Extensions.swift */,
 				1D1320092CC18AAA00857AF9 /* UISearchBar+Extensions.swift */,
 				1D13200B2CC18AE800857AF9 /* UICollectionView+Extensions.swift */,
+				1D4AAD282CCC2EB0006FEF47 /* UITableView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				1D1320142CC18C9E00857AF9 /* ProductCollectionViewCell.swift in Sources */,
 				1D3422E22CC0376400AAEF1A /* MapScreenViewController.swift in Sources */,
 				1D3422E82CC038BC00AAEF1A /* BogaTabBarViewController.swift in Sources */,
+				1D4AAD292CCC2EB0006FEF47 /* UITableView+Extensions.swift in Sources */,
 				1D037A822CBDAB88008028B1 /* AppDelegate.swift in Sources */,
 				1D02EA122CBDBC3800F0D5B1 /* BogaViewController.swift in Sources */,
 				1D4AAD272CCC2254006FEF47 /* ProductListTableViewCell.swift in Sources */,

@@ -139,6 +139,9 @@
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                                                     <color key="baseForegroundColor" name="PrimaryColor"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="viewAllActionBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ioc-hu-Pqr"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>

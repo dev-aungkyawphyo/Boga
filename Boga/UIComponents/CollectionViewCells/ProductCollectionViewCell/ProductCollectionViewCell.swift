@@ -26,6 +26,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
     
     private func setupUI() {
         favButton.layer.cornerRadius = favButton.frame.width / 2
+        productImageView.layer.cornerRadius = 20
     }
     
     func configCell(product: Product) {
