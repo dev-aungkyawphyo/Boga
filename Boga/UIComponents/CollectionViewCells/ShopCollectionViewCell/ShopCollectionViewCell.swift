@@ -29,6 +29,7 @@ class ShopCollectionViewCell: UICollectionViewCell {
         blurEffectView.frame = customView.bounds
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         customView = blurEffectView
+        shopImageView.layer.cornerRadius = 20
     }
     
     func configCell(content: Content) {

@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeScreenViewController: BogaViewController {
-
+    
     // MARK: - IBOutlets
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var userImageView: BogaImageView!
@@ -50,12 +50,12 @@ class HomeScreenViewController: BogaViewController {
     }
     
     private func collectionViewSetup() {
-//        productCollectionView.collectionViewLayout = .productLayout
+        //        productCollectionView.collectionViewLayout = .productLayout
         productCollectionView.registerCell(type: ProductCollectionViewCell.self)
         productCollectionView.delegate = self
         productCollectionView.dataSource = self
         
-//        shopCollectionView.collectionViewLayout = .productLayout
+        //        shopCollectionView.collectionViewLayout = .productLayout
         shopCollectionView.registerCell(type: ShopCollectionViewCell.self)
         shopCollectionView.delegate = self
         shopCollectionView.dataSource = self
@@ -73,6 +73,13 @@ class HomeScreenViewController: BogaViewController {
     }
     
     // MARK: User Interaction - Actions & Targets
+    @IBAction func viewAllActionBtn(_ sender: UIButton) {
+        let productListVC = ProductListScreenViewController.instantiate(storyboard: .productListRouter)
+        productListVC.modalTransitionStyle = .crossDissolve
+        productListVC.modalPresentationStyle = .fullScreen
+        self.present(productListVC, animated: true)
+    }
+    
     @objc func didTapImageView(_ sender: UITapGestureRecognizer) {
         print(sender.view?.tag as Any)
         

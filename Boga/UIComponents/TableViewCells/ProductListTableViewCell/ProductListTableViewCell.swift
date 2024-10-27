@@ -12,7 +12,7 @@ class ProductListTableViewCell: UITableViewCell {
     // MARK: - IBOutlets
     @IBOutlet weak var productImageView: UIImageView!
     @IBOutlet weak var productNameLabel: UILabel!
-    @IBOutlet weak var prductDetailLabel: UILabel!
+    @IBOutlet weak var productDetailLabel: UILabel!
     @IBOutlet weak var productDescriptionLabel: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
     
@@ -21,13 +21,28 @@ class ProductListTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setupUI()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
+    }
+    
+    private func setupUI() {
+        favButton.layer.cornerRadius = favButton.frame.width / 2
+        favButton.clipsToBounds = true
+        addToCartButton.layer.cornerRadius = addToCartButton.frame.width / 2
+        addToCartButton.clipsToBounds = true
+        productImageView.layer.cornerRadius = 20
+    }
+    
+    func configCell(products: Product) {
+        productNameLabel.text = products.name
+        productDetailLabel.text = products.detail
+        productDescriptionLabel.text = products.description
+        productPriceLabel.text = "\(products.price ?? 0.0) MMK"
+        productImageView.image = products.image
     }
     
 }

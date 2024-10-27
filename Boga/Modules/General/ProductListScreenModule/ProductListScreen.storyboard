@@ -3,7 +3,6 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,10 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="x3A-Ee-U5D">
-                                <rect key="frame" x="0.0" y="86.666666666666686" width="393" height="765.33333333333326"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Specials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MJ-hH-XDa">
                                 <rect key="frame" x="114.66666666666669" y="59" width="164" height="27"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
@@ -29,7 +24,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A23-c1-GLV">
                                 <rect key="frame" x="16" y="58.666666666666657" width="28" height="28"/>
-                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="28" id="aK0-wp-HWZ"/>
                                     <constraint firstAttribute="height" constant="28" id="psX-lC-rX4"/>
@@ -38,24 +33,42 @@
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.backward" catalog="system">
                                     <color key="baseForegroundColor" name="BtnTextColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="UGT-5R-K19"/>
+                                </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="c1m-Au-CXV">
+                                <rect key="frame" x="0.0" y="91.666666666666686" width="393" height="726.33333333333326"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProductListTableViewCell" id="2rm-EE-hn8" customClass="ProductListTableViewCell" customModule="Boga" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="55.333332061767578" width="353" height="56"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2rm-EE-hn8" id="cmO-k1-54l">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="56"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="A23-c1-GLV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="1Dd-aE-kaF"/>
                             <constraint firstItem="3MJ-hH-XDa" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="KAQ-wr-DOJ"/>
-                            <constraint firstItem="x3A-Ee-U5D" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ks2-SY-AWK"/>
-                            <constraint firstAttribute="bottom" secondItem="x3A-Ee-U5D" secondAttribute="bottom" id="Ovs-zN-S4m"/>
-                            <constraint firstItem="x3A-Ee-U5D" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="aet-MN-LN7"/>
-                            <constraint firstItem="x3A-Ee-U5D" firstAttribute="top" secondItem="A23-c1-GLV" secondAttribute="bottom" id="d7C-qI-JNr"/>
+                            <constraint firstItem="c1m-Au-CXV" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="ZjO-eC-9nv"/>
+                            <constraint firstItem="c1m-Au-CXV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="f9I-N7-K3L"/>
+                            <constraint firstItem="c1m-Au-CXV" firstAttribute="top" secondItem="A23-c1-GLV" secondAttribute="bottom" constant="5" id="ftV-TM-osm"/>
                             <constraint firstItem="A23-c1-GLV" firstAttribute="centerY" secondItem="3MJ-hH-XDa" secondAttribute="centerY" id="hla-Vg-5cL"/>
                             <constraint firstItem="3MJ-hH-XDa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="xLt-ga-LTr"/>
+                            <constraint firstItem="c1m-Au-CXV" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="zQY-NN-WIn"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="A23-c1-GLV" id="juy-37-v39"/>
-                        <outlet property="specialTable" destination="x3A-Ee-U5D" id="0hT-NX-F7i"/>
+                        <outlet property="specialTable" destination="c1m-Au-CXV" id="a3K-ZO-Me9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -71,8 +84,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGray6Color">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
