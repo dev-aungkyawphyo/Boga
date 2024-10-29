@@ -39,6 +39,8 @@
 		1D4AAD262CCC2254006FEF47 /* ProductListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D4AAD252CCC2254006FEF47 /* ProductListTableViewCell.xib */; };
 		1D4AAD272CCC2254006FEF47 /* ProductListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4AAD242CCC2254006FEF47 /* ProductListTableViewCell.swift */; };
 		1D4AAD292CCC2EB0006FEF47 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4AAD282CCC2EB0006FEF47 /* UITableView+Extensions.swift */; };
+		1D90F04D2CCEC8A7000690F0 /* DetailScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D90F04C2CCEC8A7000690F0 /* DetailScreenViewController.swift */; };
+		1D90F04F2CCEC8B8000690F0 /* DetailScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D90F04E2CCEC8B8000690F0 /* DetailScreen.storyboard */; };
 		1DA881A22CBEE62F00415FD1 /* ValidationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA881A12CBEE62F00415FD1 /* ValidationService.swift */; };
 		1DA881A42CBEEDAE00415FD1 /* LoginScreenProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA881A32CBEEDAE00415FD1 /* LoginScreenProtocols.swift */; };
 		1DA881A62CBEEDE900415FD1 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA881A52CBEEDE900415FD1 /* LoginModel.swift */; };
@@ -81,6 +83,8 @@
 		1D4AAD242CCC2254006FEF47 /* ProductListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTableViewCell.swift; sourceTree = "<group>"; };
 		1D4AAD252CCC2254006FEF47 /* ProductListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductListTableViewCell.xib; sourceTree = "<group>"; };
 		1D4AAD282CCC2EB0006FEF47 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		1D90F04C2CCEC8A7000690F0 /* DetailScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenViewController.swift; sourceTree = "<group>"; };
+		1D90F04E2CCEC8B8000690F0 /* DetailScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailScreen.storyboard; sourceTree = "<group>"; };
 		1DA881A12CBEE62F00415FD1 /* ValidationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationService.swift; sourceTree = "<group>"; };
 		1DA881A32CBEEDAE00415FD1 /* LoginScreenProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenProtocols.swift; sourceTree = "<group>"; };
 		1DA881A52CBEEDE900415FD1 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
@@ -323,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				1D4AAD1C2CCC0C95006FEF47 /* ProductListScreenModule */,
+				1D90F04B2CCEC87C000690F0 /* DetailScreenModule */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -334,6 +339,15 @@
 				1D4AAD252CCC2254006FEF47 /* ProductListTableViewCell.xib */,
 			);
 			path = ProductListTableViewCell;
+			sourceTree = "<group>";
+		};
+		1D90F04B2CCEC87C000690F0 /* DetailScreenModule */ = {
+			isa = PBXGroup;
+			children = (
+				1D90F04C2CCEC8A7000690F0 /* DetailScreenViewController.swift */,
+				1D90F04E2CCEC8B8000690F0 /* DetailScreen.storyboard */,
+			);
+			path = DetailScreenModule;
 			sourceTree = "<group>";
 		};
 		1DA881A72CBEF76000415FD1 /* HomeScreenModule */ = {
@@ -409,6 +423,7 @@
 				1D1320172CC18CB700857AF9 /* ShopCollectionViewCell.xib in Resources */,
 				1D1320132CC18C9E00857AF9 /* ProductCollectionViewCell.xib in Resources */,
 				1D037A8B2CBDAB8A008028B1 /* Assets.xcassets in Resources */,
+				1D90F04F2CCEC8B8000690F0 /* DetailScreen.storyboard in Resources */,
 				1D02EA312CBDC03400F0D5B1 /* LoginScreen.storyboard in Resources */,
 				1D037A8E2CBDAB8A008028B1 /* Base in Resources */,
 			);
@@ -421,6 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D90F04D2CCEC8A7000690F0 /* DetailScreenViewController.swift in Sources */,
 				1D4AAD1E2CCC0CC1006FEF47 /* ProductListScreenViewController.swift in Sources */,
 				1D3422E62CC0377A00AAEF1A /* ProfileScreenViewController.swift in Sources */,
 				1D02EA262CBDBF7A00F0D5B1 /* BogaButton.swift in Sources */,
