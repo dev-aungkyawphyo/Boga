@@ -82,7 +82,7 @@ class HomeScreenViewController: BogaViewController {
     
     @objc func didTapImageView(_ sender: UITapGestureRecognizer) {
         print(sender.view?.tag as Any)
-        
+        // TODO: Action need
     }
 
 }
@@ -94,6 +94,18 @@ class HomeScreenViewController: BogaViewController {
 
 // MARK: - UICollectionViewDelegate
 extension HomeScreenViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == shopCollectionView {
+            // TODO: Shop detail screen
+        } else {
+            let detailVC = DetailScreenViewController.instantiate(storyboard: .detail)
+            detailVC.collectProducts = products
+            detailVC.modalTransitionStyle = .crossDissolve
+            detailVC.modalPresentationStyle = .fullScreen
+            self.present(detailVC, animated: true)
+        }
+    }
     
 }
 

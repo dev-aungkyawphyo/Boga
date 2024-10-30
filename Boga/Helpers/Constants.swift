@@ -15,3 +15,7 @@ enum AssetColor: String {
     case searchBarBGColor = "SearchBarBGColor"
     case tertiaryTextColor = "TertiaryTextColor"
 }
+
+enum StepperControl: Int {
+    case minus = 0, plus
+}
