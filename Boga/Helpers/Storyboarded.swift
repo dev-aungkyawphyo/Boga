@@ -12,6 +12,7 @@ enum Storyboard: String {
     case login = "LoginScreen"
     case baseRouter = "MainScreen"
     case productListRouter = "ProductListScreen"
+    case detail = "DetailScreen"
     
     var name: String {
         self.rawValue
